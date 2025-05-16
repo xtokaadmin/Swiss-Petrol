@@ -2,6 +2,9 @@ import React from "react";
 import Layout from "../layout/Layout";
 import { motion } from "framer-motion";
 import ServiceCard from "../cards/ServiceCard";
+import pompaImage from "../../assets/pompa.png";
+import pompa2Image from "../../assets/pompa2.jpg";
+import pompa3Image from "../../assets/pompa3.jpeg";
 
 const Services = () => {
   const services = [
@@ -205,7 +208,13 @@ const Services = () => {
                   >
                     <img
                       className="mx-auto rounded-lg shadow-lg"
-                      src={""}
+                      src={
+                        index % 3 === 0
+                          ? pompaImage
+                          : index % 3 === 1
+                            ? pompa2Image
+                            : pompa3Image
+                      }
                       alt={service.title}
                     />
                   </div>

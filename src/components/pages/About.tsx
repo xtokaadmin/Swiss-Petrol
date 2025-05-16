@@ -1,6 +1,9 @@
 import React from "react";
 import Layout from "../layout/Layout";
 import { motion } from "framer-motion";
+import pompaImage from "../../assets/pompa.png";
+import pompa2Image from "../../assets/pompa2.jpg";
+import pompa3Image from "../../assets/pompa3.jpeg";
 
 const About = () => {
   return (
@@ -95,7 +98,7 @@ const About = () => {
               >
                 <img
                   className="rounded-lg shadow-lg"
-                  src="https://images.unsplash.com/photo-1622542796254-5b9c46ab0d6f?w=800&q=80"
+                  src={pompaImage}
                   alt="Swiss Tankstelle Hauptsitz"
                 />
               </motion.div>

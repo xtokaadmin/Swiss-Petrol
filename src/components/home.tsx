@@ -3,6 +3,7 @@ import Layout from "./layout/Layout";
 import HeroSection from "./sections/HeroSection";
 import ServicesSection from "./sections/ServicesSection";
 import { motion } from "framer-motion";
+import pompaImage from "../assets/pompa.png";
 
 const Home = () => {
   return (
@@ -50,7 +51,7 @@ const Home = () => {
             >
               <img
                 className="rounded-lg shadow-lg"
-                src="/pompa.png"
+                src={pompaImage}
                 alt="Swiss Tankstelle Hauptsitz"
               />
             </motion.div>

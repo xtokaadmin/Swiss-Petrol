@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import heroBackground from "../../assets/pompa3.jpg";
 
 interface HeroSectionProps {
   title?: string;
@@ -12,7 +13,7 @@ const HeroSection = ({
   title = "Führend bei Tankstellen in der Schweiz",
   subtitle = "Premium Kraftstoffe und innovative Tankstellendienste für Industrie und Verbraucher",
   videoUrl = "",
-  imageUrl = "",
+  imageUrl = heroBackground,
 }: HeroSectionProps) => {
   return (
     <section className="relative h-screen w-full overflow-hidden bg-gray-900">
